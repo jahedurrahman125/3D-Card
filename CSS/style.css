@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Gemunu+Libre:wght@200&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,12 +9,12 @@ html {
     font-size: 62.5%;
 }
 
-.section-container {
+.section-1-container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #333;
+    background-color: #323;
     justify-content: space-between;
     padding: 10rem 0;
 }
@@ -91,7 +92,7 @@ h4 {
     text-shadow: .1rem .1rem .1rem #000;
 }
 
-button {
+.order {
     background-color: #111;
     color: #888;
     border: none;
@@ -101,4 +102,114 @@ button {
     font-size: 1rem;
     width: 60%;
     box-shadow: .1rem .1rem .1rem #000;
+}
+
+
+/* Section 2 started */
+
+.section-2-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 0;
+    perspective: 600px;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+}
+
+.float-card {
+    transform-style: preserve-3d;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2rem 0;
+    box-shadow: .1rem .1rem .1rem #111, -.1rem 0rem 0rem #111;
+    transition: all 0.5s ease;
+}
+
+.icon {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    width: 5rem;
+    z-index: 2;
+    position: absolute;
+    transition: all 0.75s ease-in-out;
+}
+
+.img-circle {
+    height: 6rem;
+    width: 6rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: .1rem .1rem .1rem #222;
+}
+
+.card-elements {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+
+.title {
+    transition: all 0.75s ease-in-out;
+    font-family: 'Ephesis', cursive;
+}
+
+.description {
+    font-size: 1.3rem;
+    transition: all 0.75s ease-in-out;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.size {
+    padding: 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.size-btn {
+    height: 1.1rem;
+    width: 2rem;
+    border-radius: 40%;
+    font-size: .6rem;
+    font-weight: bold;
+    border: none;
+    background: lightblue;
+    cursor: pointer;
+}
+
+.active {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.purchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: .2rem .4rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1rem;
+    box-shadow: .1rem .1rem .1rem #222;
+    transition: all 0.75s ease-in-out;
 }
