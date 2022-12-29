@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Gemunu+Libre:wght@200&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -39,7 +40,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #a79a2d;
+    background: rgb(243, 193, 119);
     padding: 3rem;
     position: relative;
     transform: rotateY(14deg) skewX(-1deg);
